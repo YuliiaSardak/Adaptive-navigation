@@ -1,0 +1,56 @@
+.header__nav {
+    &-menu {
+    display: flex;
+    padding: 27px 0 0 20px;
+    gap: 20px;
+
+        @media screen and (max-width:$tablet){
+            gap: 10px;
+        }
+        @media screen and (max-width:$mobile){
+            gap: 8px;
+            padding: 27px 0 0 12px;
+        }
+    }
+    
+    &-language {
+        display: flex;
+        margin: 0 56px 0 auto;
+        gap: 20px;
+        align-items: center;
+
+        @media screen and (max-width:$tablet){
+            gap: 10px;
+            margin: 0 20px 0 auto;
+        }
+        @media screen and (max-width:$mobile){
+            display: none;
+        }
+    }
+    &-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+        @media screen and (max-width:$tablet){
+        gap: 10px;
+        }
+        @media screen and (max-width:$mobile){
+        gap: 8px;;
+        }
+    }
+    
+    &-avatar {
+        margin: 22px 20px 0 50px;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+
+        @media screen and (max-width:$tablet){
+            margin: 22px 10px 0 20px;
+        }
+        @media screen and (max-width:$mobile){
+            display: none;
+        }
+    }
+}

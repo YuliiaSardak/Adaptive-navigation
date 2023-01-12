@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    max-width: 320px;
+  }
+}
+
+.header__nav-menu {
+  display: flex;
+  padding: 27px 0 0 20px;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .header__nav-menu {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__nav-menu {
+    gap: 8px;
+    padding: 27px 0 0 12px;
+  }
+}
+.header__nav-language {
+  display: flex;
+  margin: 0 56px 0 auto;
+  gap: 20px;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .header__nav-language {
+    gap: 10px;
+    margin: 0 20px 0 auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__nav-language {
+    display: none;
+  }
+}
+.header__nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .header__nav-icons {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__nav-icons {
+    gap: 8px;
+  }
+}
+.header__nav-avatar {
+  margin: 22px 20px 0 50px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .header__nav-avatar {
+    margin: 22px 10px 0 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__nav-avatar {
+    display: none;
+  }
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 46px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.title {
+  color: #392C72;
+  font-weight: 500;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 190px;
+  font-size: 18px;
+  line-height: 22px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main-menu__item {
+  margin-bottom: 40px;
+}
+
+.pretitle {
+  margin-top: 30px;
+}
+
+.main-menu:hover, nav.main-menu.expanded {
+  width: 220px;
+  overflow: visible;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 768px) {
+  .main-menu:hover, nav.main-menu.expanded {
+    width: 60px;
+    overflow: hidden;
+    box-shadow: none;
+  }
+}
+
+.main-menu:hover ~ .hidden {
+  display: none;
+}
+
+.main-menu {
+  background: #FFFFFF;
+  border-right: 1px solid #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 1120px;
+  left: 0;
+  width: 60px;
+  overflow: hidden;
+  transition: width 0.05s linear;
+  transition: width 0.05s linear;
+  transform: translateZ(0) scale(1, 1);
+  z-index: 1000;
+}
+
+.main-menu > ul {
+  margin: 30px 0;
+}
+
+.main-menu li {
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 46px;
+}
+
+.main-menu li > a {
+  position: relative;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4F4F4F;
+  text-decoration: none;
+  transform: translateZ(0) scale(1, 1);
+  transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  height: 46px;
+}
+
+.main-menu .nav-icon {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.main-menu .nav-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 190px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.no-touch .scrollable.hover {
+  overflow-y: hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+  overflow-y: auto;
+  overflow: visible;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+nav ul, nav li {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li:hover > a,
+nav.main-menu li.active > a,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+.dashboard-page nav.dashboard-menu ul li.active a {
+  color: #FFFFFF;
+  background-color: #9E8CFC;
+  box-shadow: 0px 0px 20px rgba(158, 140, 252, 0.7);
+}
+
+.main__photo {
+  float: right;
+  margin-top: 30px;
+}
+.main__photo > img {
+  height: 800px;
+  width: 1220px;
+}
+@media screen and (max-width: 768px) {
+  .main__photo > img {
+    max-width: 700px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main__photo > img {
+    max-width: 250px;
+  }
+}
+
+.header__nav-wrapper {
+  max-width: 1170px;
+  height: 80px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background: #FFFFFF;
+  margin-left: auto;
+  margin-top: 30px;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .header__nav-wrapper {
+    max-width: 670px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__nav-wrapper {
+    max-width: 250px;
+    margin-right: 6px;
+  }
+}
+
+.icons {
+  width: 26px;
+  height: 26px;
+}
+.icons:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

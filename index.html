@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Adaptive navigation</title>
+</head>
+<body>
+    <header class="header__nav">
+        <div class="header__nav-wrapper">
+            <div class="header__nav-menu">
+                <a class="header__nav-link" href="#">
+                    <svg class="header__nav-icons icons">
+                        <use xlink:href="./sprites/sprites.svg#mail_header"></use>
+                    </svg>
+                </a>
+                <a class="header__nav-link" href="#">
+                    <svg class="header__nav-icons icons" >
+                        <use xlink:href="./sprites/sprites.svg#bubble_header"></use>
+                    </svg>
+                </a>
+                <a class="header__nav-link" href="#">
+                    <svg class="header__nav-icons icons">
+                        <use xlink:href="./sprites/sprites.svg#calendar_header"></use>
+                    </svg>
+                </a>
+                <a class="header__nav-link" href="#">
+                    <svg class="header__nav-icons icons">
+                        <use xlink:href="./sprites/sprites.svg#star_header"></use>
+                    </svg>
+                </a>
+              </div>
+              <div class="header__nav-language">
+                <svg class="header__nav-language-icons icons">
+                    <use xlink:href="./sprites/sprites.svg#lang-icon_header"></use>
+                </svg>
+                <p class="header__nav-language-text">English</p>
+              </div>
+              <div class="header__nav-icons">
+                <svg class="header__nav-icons icons">
+                    <use xlink:href="./sprites/sprites.svg#change-theme_header"></use>
+                </svg>
+                <svg class="header__nav-icons icons">
+                    <use xlink:href="./sprites/sprites.svg#search_header"></use>
+                </svg>
+                <svg class="header__nav-icons icons">
+                    <use xlink:href="./sprites/sprites.svg#set_header"></use>
+                </svg>
+              </div>
+              <img class="header__nav-avatar" src="./image/Avatar.png" alt="Avatar">
+        </div>
+        
+    </header>
+    <main>
+        <div class="main__photo">
+            <img src="./image/bg.jpg" alt="">
+        </div>
+        
+        <nav class="main-menu">
+            <ul class="main-menu__list">
+                <li class="main-menu__item">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#logo_icon"></use>
+                          </svg>
+                        <h2 class="title">LightBoard</h2>
+                    </a>         
+                </li>
+                <li class="has-subnav dashboard">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#computer"></use>
+                        </svg>
+                        <h2 class="nav-text">Dashboard</h2>
+                    </a>
+                </li>
+                <li class="has-subnav pretitle">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#divider"></use>
+                        </svg>
+                        <h2 class="nav-text">APPS</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#Email"></use>
+                          </svg>
+                        <h2 class="nav-text">Email</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#Chats"></use>
+                        </svg>
+                        <h2 class="nav-text">Chats</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#Calendar"></use>
+                        </svg>
+                        <h2 class="nav-text">Calendar</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#News"></use>
+                        </svg>
+                        <h2 class="nav-text">News</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#Knowledge"></use>
+                        </svg>
+                        <h2 class="nav-text">Knowledge</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#File manager"></use>
+                        </svg>
+                        <h2 class="nav-text">File manager</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#Leaflet Maps"></use>
+                        </svg>
+                        <h2 class="nav-text">Leaflet Maps</h2>
+                    </a>
+                </li>
+                <li class="has-subnav pretitle">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#divider"></use>
+                        </svg>
+                        <h2 class="nav-text">AUTH PAGES</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#Profile"></use>
+                        </svg>
+                        <h2 class="nav-text">Profile</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#Permissions"></use>
+                        </svg>
+                        <h2 class="nav-text">Permissions</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#Log Out"></use>
+                        </svg>
+                        <h2 class="nav-text">Log Out</h2>
+                    </a>
+                </li>
+                <li class="has-subnav pretitle">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#divider"></use>
+                        </svg>
+                        <h2 class="nav-text">USER INTERFACE</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#Feather"></use>
+                        </svg>
+                        <h2 class="nav-text">Feather</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#Ecommerce"></use>
+                        </svg>
+                        <h2 class="nav-text">Ecommerce</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#Components"></use>
+                        </svg>
+                        <h2 class="nav-text">Components</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#Pages"></use>
+                        </svg>
+                        <h2 class="nav-text">Pages</h2>
+                    </a>
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <svg class="icon fa fa-laptop fa-2x">
+                            <use xlink:href="./sprites/sprites.svg#Editor"></use>
+                        </svg>
+                        <h2 class="nav-text">Editor</h2>
+                    </a>
+                </li>
+            </ul>
+    
+        </nav>
+    </main>
+    
+</body>
+</html>
